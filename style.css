@@ -1,10 +1,9 @@
-/* --- General Styles --- */
 body {
     background-color: #121212;
     color: #EAEAEA;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding-top: 50px; /* Added padding to prevent content from being hidden by the fixed navbar */
+    padding-top: 50px;
 }
 
 h1, h2 {
@@ -26,7 +25,6 @@ p {
     color: #A0AEC0;
 }
 
-/* General container for centering content */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -34,7 +32,6 @@ p {
     padding: 0 20px;
 }
 
-/* --- Navigation --- */
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -63,22 +60,18 @@ p {
     color: white;
 }
 
-/* --- Sections --- */
 section, footer {
     padding: 80px 0;
     overflow: hidden;
 }
 
-/* --- Banner Section (Margins Restored) --- */
 .banner {
     display: flex;
     align-items: center;
-    /* Restored original margins */
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 360px;
-    margin-right: 360px;
-    /* Removed padding from the generic section rule */
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 180px;
+    margin-right: 180px;
     padding: 0;
 }
 
@@ -96,7 +89,7 @@ section, footer {
 
 .image-wrap {
     flex-shrink: 0;
-    margin-left: 20px; /* Added a small margin for spacing */
+    margin-left: 20px;
 }
 
 .image-wrap img {
@@ -105,7 +98,6 @@ section, footer {
     height: auto;
 }
 
-/* --- About Section (Paddings Restored) --- */
 #about {
     background: #1E1E1E;
     /* Restored original padding-bottom and removed other padding */
@@ -115,7 +107,6 @@ section, footer {
     padding-right: 0;
 }
 
-/* Restored original side padding for the inner container */
 #about .container {
     width: auto;
     max-width: none;
@@ -132,7 +123,6 @@ section, footer {
     color: #11ABB0;
 }
 
-/* --- Footer (Contact) --- */
 footer {
     background: #1E1E1E;
     text-align: center;
