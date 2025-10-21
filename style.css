@@ -94,14 +94,14 @@ section, footer {
 
 .image-wrap img {
     border-radius: 8px;
-    max-width: 100%;
+    width: 100%;
     height: auto;
+
 }
 
 #about {
     background: #1E1E1E;
-    /* Restored original padding-bottom and removed other padding */
-    padding-top: 60px; /* Added some top padding for spacing */
+    padding-top: 60px;
     padding-bottom: 66px;
     padding-left: 0;
     padding-right: 0;
