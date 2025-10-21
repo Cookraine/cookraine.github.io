@@ -1,0 +1,147 @@
+/* --- General Styles --- */
+body {
+    background-color: #121212;
+    color: #EAEAEA;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 50px; /* Added padding to prevent content from being hidden by the fixed navbar */
+}
+
+h1, h2 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+p {
+    line-height: 1.8;
+    color: #A0AEC0;
+}
+
+/* General container for centering content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Navigation --- */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4C1214;
+    color: white;
+}
+
+/* --- Sections --- */
+section, footer {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+/* --- Banner Section (Margins Restored) --- */
+.banner {
+    display: flex;
+    align-items: center;
+    /* Restored original margins */
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 360px;
+    margin-right: 360px;
+    /* Removed padding from the generic section rule */
+    padding: 0;
+}
+
+.banner-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.banner-text ul {
+    list-style-type: disc;
+    font-size: 20px;
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.image-wrap {
+    flex-shrink: 0;
+    margin-left: 20px; /* Added a small margin for spacing */
+}
+
+.image-wrap img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- About Section (Paddings Restored) --- */
+#about {
+    background: #1E1E1E;
+    /* Restored original padding-bottom and removed other padding */
+    padding-top: 60px; /* Added some top padding for spacing */
+    padding-bottom: 66px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Restored original side padding for the inner container */
+#about .container {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#about a, #about a:visited {
+    color: #fff;
+}
+
+#about a:hover, #about a:focus {
+    color: #11ABB0;
+}
+
+/* --- Footer (Contact) --- */
+footer {
+    background: #1E1E1E;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 22px;
+}
+
+footer p {
+    color: #EAEAEA;
+}
