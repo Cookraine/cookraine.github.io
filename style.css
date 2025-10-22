@@ -68,15 +68,14 @@ section, footer {
 .banner {
     display: flex;
     align-items: center;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    margin-left: 180px;
-    margin-right: 180px;
+    margin: 90px auto;
+    width: 90%;
+    max-width: 1200px;
     padding: 0;
 }
 
 .banner-text {
-    flex: 1;
+    flex: 1 1 400px;
     min-width: 300px;
 }
 
@@ -88,8 +87,8 @@ section, footer {
 }
 
 .image-wrap {
-    flex-shrink: 0;
-    margin-left: 20px;
+    flex: 1 1 300px;
+    max-width: 400px;
 }
 
 .image-wrap img {
@@ -134,4 +133,39 @@ footer h2 {
 
 footer p {
     color: #EAEAEA;
+}
+
+@media (max-width: 640px) {
+
+    .banner {
+        flex-direction: column-reverse;
+
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .image-wrap {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .banner-text {
+        min-width: auto;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #about .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
