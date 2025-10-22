@@ -135,7 +135,7 @@ footer p {
     color: #EAEAEA;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1080px) {
 
     .banner {
         flex-direction: column-reverse;
