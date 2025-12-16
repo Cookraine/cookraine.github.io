@@ -229,6 +229,79 @@ footer p {
     color: #11ABB0;
 }
 
+/* --- Light Theme --- */
+
+.topnav a.theme-toggle {
+    float: right;
+    cursor: pointer;
+}
+
+body.light-theme {
+    background-color: #FDFBF7;
+    color: #1A1A1A;
+}
+
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3 {
+    color: #2E4600;
+}
+
+body.light-theme p {
+    color: #333333;
+}
+
+
+body.light-theme .topnav {
+    background-color: #4E5D46;
+}
+
+body.light-theme .topnav a.active {
+    background-color: #2E7D32;
+}
+
+body.light-theme .topnav a:hover {
+    background-color: #F0ECE2;
+    color: #2E4600;
+}
+
+body.light-theme #about,
+body.light-theme footer,
+body.light-theme .gray-bg {
+    background: #F0ECE2;
+}
+
+body.light-theme #about p,
+body.light-theme footer p,
+body.light-theme .info {
+    color: #333333;
+}
+
+body.light-theme a,
+body.light-theme .date,
+body.light-theme .lang-item p {
+    color: #2E7D32;
+}
+
+body.light-theme #about a:hover {
+    color: #1B5E20;
+}
+
+
+body.light-theme .skills-list li,
+body.light-theme .lang-item {
+    background: #FFFFFF;
+    color: #1A1A1A;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left-color: #2E7D32;
+}
+
+body.light-theme .resume-item {
+    border-bottom-color: #D1C4E9;
+    border-bottom: 1px solid #ccc;
+}
+
 @media (max-width: 1080px) {
 
     .banner {

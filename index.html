@@ -18,6 +18,7 @@
             <a href="#education">Education</a>
             <a href="#languages">Languages</a>
             <a href="#contact">Contacts</a>
+            <a href="javascript:void(0);" class="theme-toggle" onclick="toggleTheme()">🌗 Theme</a>
         </nav>
     </header>
 
@@ -138,5 +139,24 @@
         </div>
     </footer>
 
+    <script>
+        function toggleTheme() {
+            var body = document.body;
+            body.classList.toggle("light-theme");
+
+            if (body.classList.contains("light-theme")) {
+                localStorage.setItem("theme", "light");
+            } else {
+                localStorage.setItem("theme", "dark");
+            }
+        }
+
+        window.onload = function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light") {
+                document.body.classList.add("light-theme");
+            }
+        }
+    </script>
 </body>
 </html>
