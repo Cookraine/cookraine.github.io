@@ -135,6 +135,100 @@ footer p {
     color: #EAEAEA;
 }
 
+.gray-bg {
+    background: #1E1E1E;
+}
+
+/* Resume Items (Jobs & Education) */
+.resume-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333; /* Adds a subtle separator */
+    padding-bottom: 20px;
+}
+
+.resume-item:last-child {
+    border-bottom: none;
+}
+
+.resume-item h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.resume-item .info {
+    font-family: "Times New Roman", Times, serif; /* Stylish contrast for meta info */
+    color: #A0AEC0;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.resume-item .info span {
+    margin: 0 5px;
+    color: #fff;
+}
+
+.resume-item .date {
+    color: #11ABB0; /* Uses the cyan accent color from your links */
+}
+
+/* Skills Layout (Two Columns) */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px; /* Negative margin for spacing */
+}
+
+.column {
+    flex: 1;
+    min-width: 300px; /* Stacks on mobile */
+    padding: 0 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #121212; /* Darker card within gray section */
+    color: #A0AEC0;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border-left: 3px solid #11ABB0; /* Accent border */
+}
+
+/* Languages Grid */
+.languages-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lang-item {
+    background: #121212;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.lang-item h3 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.lang-item p {
+    margin-bottom: 0;
+    color: #11ABB0;
+}
+
 @media (max-width: 1080px) {
 
     .banner {
@@ -162,6 +256,14 @@ footer p {
 
     h2 {
         font-size: 24px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        margin-bottom: 30px;
     }
 
     #about .container {
