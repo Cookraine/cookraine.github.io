@@ -144,7 +144,9 @@ section, footer {
     line-height: 1.8;
     padding-left: 20px;
     color: var(--text-muted);
+    max-width: 85%;
 }
+
 
 .image-wrap {
     flex: 1 1 300px;
@@ -301,6 +303,10 @@ footer h2 {
     .banner-text {
         min-width: auto;
         text-align: left;
+    }
+
+    .banner-text ul {
+        padding-left: 10%;
     }
 
     h1 {
